@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "lato", montserat;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px, 60px, 0px, 60px;
+    gap: 10px;
+    /* border: 1px solid red; */
+    margin: auto 40px;
+}
+
+.nav img{
+    width: 130px;
+    height: 58px;
+}
+
+.nav-link{
+    display: flex;
+    justify-content: space-between;
+    gap: 3px;
+    align-items: center;
+}
+
+.nav-link li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+.nav-link a{
+    text-decoration: none;
+    color: #181A18;
+    font-family: lato;
+    font-weight: 400;
+    size: 18px;
+    line-height: 24px;
+}
+
+.nav .menu{
+    display: none;
+}
+
+.hero{
+    background-image: url(../images/Image\ \(1\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    border: 1px solid rgb(253, 247, 247);
+    padding-right: 850px;
+}
+
+.hero-text{
+    background-color: #ffff;
+    margin-top: 120px;
+    /* border: 1px solid red; */
+    padding: 30px 30px 30px 0px;
+    border-radius: 0px 60px 60px 0px;
+}
+
+.hero-text h1{
+    font-family: lato;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    padding-left: 50px;
+}
+
+.hero-text p{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+}
+
+.future{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    /* border: 1px solid red; */
+}
+
+.image{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.future .image img{
+    width: 320px;
+    height: 189px;
+}
+
+.future-area{
+    border-radius: 0px 60px 60px 0px;
+    gap: 32px;
+    background-color: rgba(242, 240, 242, 1);
+    /* border: 1px solid red; */
+}
+
+.future-text{
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px
+}
+
+.future-text h1{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 54px;
+    padding-left: 50px;
+    color: rgba(24, 26, 24, 1);
+}
+
+.future-text p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.title-text{
+    /* border: 1px solid red; */
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.title-text h1{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 54px;
+    text-align: center;
+}
+
+.title-text p{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.features{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 150px;
+    margin: 50px 100px;
+    padding: 10px;
+    /* border: 1px solid red; */
+}
+
+.card{
+    background-color: rgba(226, 241, 232, 1);
+    border-radius: 30px;
+    padding: 20px 40px;
+    gap: 50px;
+}
+
+.card_header img{
+    width: 30px;
+}
+
+.card h2{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 32px;
+}
+
+.card p{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-top: 10px;
+}
+
+
+@media(max-width: 768px) {
+    .nav .nav-link {
+        display: none;
+    }
+    
+    .nav .menu {
+        display: flex;
+    }
+
+    .hero{
+        padding-right: 0px;
+    }
+
+    .hero-text {
+        width: 300px;
+    }
+
+    .hero-text h1{
+        width: 287px;
+        font-size: 30px;
+        line-height: 33px;
+    }
+
+    .hero-text p {
+        font-size: 13px;
+        line-height: 16px;
+        padding-left: 50px;
+        padding-top: 25px;
+    }
+
+    .future {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(242, 240, 242, 1);
+    }
+
+    .future-area{
+        border-radius: 0px;
+    }
+
+    .image{
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    padding-left: 1rem;
+}
+
+    .future-text{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
+}
+
+.title-text {
+    /* border: 1px solid red; */
+    margin: auto 100px;
+}
+
+.title-text h1 {
+    font-size: 28px;
+    line-height: 39px;
+    text-align: center;
+}
+
+.title-text p{
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.features{
+    gap: 10px;
+    margin: 22px;
+}
+
+.card{
+    padding: 20px 10px;
+}
+}
+
+
+@media(max-width: 425px) {
+    .body{
+        overflow-x: hidden;
+    }
+
+    .nav .nav-link{
+        display: none;
+    }
+
+    .nav .menu{
+        display: flex;
+    }
+
+    .hero{
+        background-position: 65%;
+        background-repeat: repeat-y;
+        background-size: 209vh;
+        background-position-y: -85%;
+    }
+    .hero-text{
+        margin-top: 20px;
+        border-radius: 0px 21px 21px 0px;
+        padding: 10px 20px 10px 0px;
+        width: 373px;
+        height: 159px;
+    }
+
+    .hero-text h1{
+        font-size: 35px;
+        line-height: 31px;
+    }
+
+    .hero-text p{
+        font-size: 15px;
+        padding-top: 20px;
+    }
+
+    .future{
+        margin: 40px 15px;
+        border-radius: 40px;
+        /* margin-top: 20px; */
+    }
+
+    .image{
+        padding-left: 0px;
+    }
+
+    .future .image img{
+        width: 197px;
+        height: auto;
+    }
+
+    .img3{
+        border-radius: 0px 40px 0px 0px;
+    }
+
+    .img2{
+        border-radius: 0px 0px 0px 0px;
+    }
+
+    .img4{
+        border-radius: 0px 0px 30px 0px;
+    }
+
+    .future-area{
+        border-radius: 40px 40px;
+    }
+
+    .future-text{
+        padding: 18px;
+    }
+
+    .future-text p{
+        font-size: 16px;
+        padding-top: 5px;
+    }
+
+    .title-text{
+        margin: 0px;
+    }
+
+    .title-text h1{
+        font-size: 33px;
+    }
+
+    .title-text p{
+        padding-top: 20px;
+        font-size: 20px;
+    }
+
+    .features{
+        grid-template-columns: none;
+    }
+}
